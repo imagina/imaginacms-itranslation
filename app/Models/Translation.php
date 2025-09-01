@@ -10,6 +10,7 @@ class Translation extends CoreModel
     use Translatable;
 
     protected $table = 'itranslation__translations';
+    public $useAudit = false;
     public string $transformer = 'Modules\Itranslation\Transformers\TranslationTransformer';
     public string $repository = 'Modules\Itranslation\Repositories\TranslationRepository';
     public array $requestValidation = [
