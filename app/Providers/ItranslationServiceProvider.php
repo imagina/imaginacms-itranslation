@@ -76,7 +76,7 @@ class ItranslationServiceProvider extends ServiceProvider
             $this->loadTranslationsFrom($langPath, $this->nameLower);
         } else {
             $moduleLangPath = module_path($this->name, 'resources/lang');
-            $this->loadTranslationsFrom($moduleLangPath, 'iuser');
+            $this->loadTranslationsFrom($moduleLangPath, $this->nameLower);
         }
     }
 
