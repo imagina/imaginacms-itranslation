@@ -22,7 +22,6 @@ return new class extends Migration
 
             // Audit fields
             $table->timestamps();
-            $table->auditStamps();
         });
     }
 
